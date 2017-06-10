@@ -1,0 +1,29 @@
+{
+  "name": "code-splitting-example",
+  "version": "0.0.1",
+  "description": "Project example to help debug issues with code splitting using webpack 2",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "webpack --config webpack.config.js && webpack --config webpack.config.js --json > dist/bundle.json && webpack-bundle-analyzer dist/bundle.json"
+  },
+  "author": "Pablo Lacerda de Miranda",
+  "license": "MIT",
+  "dependencies": {
+    "draft-js": "^0.10.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-loadable": "^3.3.1",
+    "react-router": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^2.6.1",
+    "webpack-bundle-analyzer": "^2.8.2"
+  }
+}
